@@ -2,14 +2,18 @@ name: Deployment workflow
 on:
   push:
     branches: [ "main" ]
+  workflow_dispatch:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
   
 jobs:
   build:
-    name: Deploy
+    name: Build & Push
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
 
     steps:
 
