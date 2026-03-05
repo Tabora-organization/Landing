@@ -59,7 +59,7 @@ jobs:
           port: ${{ secrets.SERVER_PORT || 22 }}
           script: |
             cd /root/projects/tabora
-            docker-compose pull landing
-            docker-compose up -d landing
+            docker compose pull landing
+            docker compose up -d landing
             docker image prune -f
 
