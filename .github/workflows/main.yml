@@ -67,8 +67,6 @@ jobs:
           port: ${{ secrets.SERVER_PORT || 22 }}
           script: |
             cd /root/projects/tabora
-            ls
-            docker-compose down
-            docker image prune
-            docker rmi $(docker images 'ghcr.io/tabora-organization/landing' -a -q)
-            docker-compose up --build -d
+            docker-compose pull landing
+            docker-compose up -d landing
+            docker image prune -f
