@@ -9,7 +9,7 @@ const inter = localFont({
   preload: true,
 });
 
-const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://manager.tabora.uz";
+const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://tabora.uz";
 
 export const metadata: Metadata = {
   title: "Tabora — Qarz va nasiya nazorati",

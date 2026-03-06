@@ -16,7 +16,7 @@ COPY . .
 
 
 ARG NEXT_PUBLIC_APP_URL
-ENV NEXT_PUBLIC_APP_URL=${NEXT_PUBLIC_APP_URL:-https://manager.tabora.uz}
+ENV NEXT_PUBLIC_APP_URL=${NEXT_PUBLIC_APP_URL:-https://tabora.uz}
 
 RUN npm run build
 

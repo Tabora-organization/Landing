@@ -14,7 +14,7 @@ import {
   MessageSquare, Clock, Star, Sparkles,
 } from "lucide-react";
 
-const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://manager.tabora.uz";
+const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://tabora.uz";
 
 /* ── Animated counter ── */
 function Counter({ value, suffix = "" }: { value: string; suffix?: string }) {
