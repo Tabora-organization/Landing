@@ -7,7 +7,7 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import { useTranslation, useI18n, type Locale } from "@/lib/i18n";
 import { Logo } from "@/components/logo";
 
-const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://tabora.uz";
+const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://manager.tabora.uz";
 const LANGS: { code: Locale; label: string }[] = [
   { code: "uz", label: "UZ" },
   { code: "ru", label: "RU" },

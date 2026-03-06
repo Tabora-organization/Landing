@@ -9,14 +9,14 @@ const inter = localFont({
   preload: true,
 });
 
-const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://tabora.uz";
+const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://manager.tabora.uz";
 
 export const metadata: Metadata = {
   title: "Tabora — Qarz va nasiya nazorati",
   description:
     "O'zbekistonning birinchi P2P qarz tracking platformasi. Qarz bering, oling, kuzating — hammasi bir joyda. Bepul boshlang.",
   keywords: ["qarz", "nasiya", "tabora", "qarz nazorat", "kredit", "uz"],
-  metadataBase: new URL(APP_URL),
+  metadataBase: new URL("https://tabora.uz"),
   openGraph: {
     title: "Tabora — Qarz va nasiya nazorati",
     description: "Qarz bering, oling, kuzating — hammasi bir joyda. Bepul boshlang.",
